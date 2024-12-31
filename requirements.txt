@@ -1,0 +1,13 @@
+langchain
+langchain_community
+langchain-openai
+langchain-core
+unstructured
+python-dotenv
+streamlit
+# tiktoken
+faiss-cpu
+# libmagic
+# python-magic
+# #python-magic-bin==0.4.14
+jupyter
