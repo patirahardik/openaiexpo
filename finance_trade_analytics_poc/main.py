@@ -58,11 +58,11 @@ if process_url_clicked:
     vectorindex_openai.save_local("faiss_index")
 
     
-query = main_placefolder.text_input("Question: ")
+query = main_placefolder.text_input("Question1: ")
 # Initialise LLM with required params
 llm = OpenAI(temperature=0.9, max_tokens=500) 
 if query:
-    if os.path.exists(file_path):
+    if os.path.exists("faiss_index"):
         embeddings = OpenAIEmbeddings(model='text-embedding-3-large')
         new_vector_store = FAISS.load_local("faiss_index", embeddings, allow_dangerous_deserialization=True)
 
